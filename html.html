@@ -6,6 +6,21 @@
 	<link href="css/css.css" rel="stylesheet" type="text/css">	
 	<link rel="stylesheet" href="css/styles.css" type="text/css">
 	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script src="js/jscarousel.js" type="text/javascript"></script>
+	<link rel="stylesheet" href="css/lrtk.css" type="text/css" media="screen">
+	<script type="text/javascript">
+		$(document).ready(function() {
+		$('#jsCarousel').jsCarousel({ onthumbnailclick: function(src) { 
+		//
+		$("#overlay_pic").attr('src', src);
+		$(".overlay").show();
+		}, autoscroll: true });
+		
+		$(".overlay").click(function(){
+			$(this).hide();
+		});
+	});
+	</script>
 </head>
 <body>
 <div class="wrapper">
@@ -16,21 +31,25 @@
 
 		</div>
 	</div>
+<!--******焦点图开始***********-->
 	<div class="focus-pic">
-	<div class="slider">
-	  <ul>
-	    <li><a href="#" target="_blank"><img src="images/f1.jpg" alt=""></a></li>
-		<li><a href="#" target="_blank"><img src="images/f2.jpg" alt=""></a></li>
-		<li><a href="#" target="_blank"><img src="images/f3.jpg" alt=""></a></li>
-		<li><a href="#" target="_blank"><img src="images/f4.jpg" alt=""></a></li>
-		<li><a href="#" target="_blank"><img src="images/f5.jpg" alt=""></a></li>
-	  </ul>
-	</div>
+		<div class="slider">
+		  <ul>
+		    <li><a href="#" target="_blank"><img src="images/f1.jpg" alt=""></a></li>
+			<li><a href="#" target="_blank"><img src="images/f2.jpg" alt=""></a></li>
+			<li><a href="#" target="_blank"><img src="images/f3.jpg" alt=""></a></li>
+			<li><a href="#" target="_blank"><img src="images/f4.jpg" alt=""></a></li>
+			<li><a href="#" target="_blank"><img src="images/f5.jpg" alt=""></a></li>
+		  </ul>
+		</div>
 	</div>
 	 <script type="text/javascript" src="js/yxMobileSlider.js"></script>
-  <script>
+  	<script>
     $(".slider").yxMobileSlider({width:1200,height:600,during:3000})
   </script>
+ <!--******焦点图结束***********-->
+
+ <!--******分类导航开始***********-->
 	<div class="category clearfix">
 		<ul>
 			<li>
@@ -51,6 +70,9 @@
 			<li></li>
 		</ul>
 	</div>
+<!--******分类导航结束***********-->
+
+<!--******定制模块开始***********-->
 	<div class="customize">
 		<img src="images/customize.jpg">
 		<div class="cst-info">
@@ -62,7 +84,61 @@
 		</div>
 		
 	</div>
+<!--******定制模块结束***********-->
+
+
 	<div class="best-seller">
+		<div class="overlay"><img src="images/img_1.jpg" id="overlay_pic"></div>
+<div id="jsCarousel">
+	<div>
+		<img src="images/img_1.jpg" /><br />
+		<span class="thumbnail-text">Image 1</span></div>
+	<div>
+		<img src="images/img_2.jpg" /><br />
+		<span class="thumbnail-text">Image 2</span></div>
+	<div>
+		<img src="images/img_3.jpg" /><br />
+		<span class="thumbnail-text">Image 3</span></div>
+	<div>
+		<img src="images/img_4.jpg" /><br />
+		<span class="thumbnail-text">Image 4</span></div>
+	<div>
+		<img src="images/img_5.jpg" /><br />
+		<span class="thumbnail-text">Image 5</span></div>
+	<div>
+		<img src="images/img_6.jpg" /><br />
+		<span class="thumbnail-text">Image 6</span></div>
+	<div>
+		<img src="images/img_7.jpg" /><br />
+		<span class="thumbnail-text">Image 7</span></div>
+	<div>
+		<img src="images/img_8.jpg" /><br />
+		<span class="thumbnail-text">Image 8</span></div>
+	<div>
+		<img src="images/img_9.jpg" /><br />
+		<span class="thumbnail-text">Image 9</span></div>
+	<div>
+		<img src="images/img_10.jpg" /><br />
+		<span class="thumbnail-text">Image 10</span></div>
+	<div>
+		<img src="images/img_11.jpg" /><br />
+		<span class="thumbnail-text">Image 11</span></div>
+	<div>
+		<img src="images/img_12.jpg" /><br />
+		<span class="thumbnail-text">Image 12</span></div>
+	<div>
+		<img src="images/img_13.jpg" /><br />
+		<span class="thumbnail-text">Image 13</span></div>
+	<div>
+		<img src="images/img_14.jpg" /><br />
+		<span class="thumbnail-text">Image 14</span></div>
+	<div>
+		<img src="images/img_15.jpg" /><br />
+		<span class="thumbnail-text">Image 15</span></div>
+	<div>
+		<img src="images/img_16.jpg" /><br />
+		<span class="thumbnail-text">Image 16</span></div>
+</div>
 		
 	</div>
 	<div class="product">
