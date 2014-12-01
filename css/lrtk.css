@@ -1,3 +1,10 @@
+/*******图片轮播********/
+/*
+ *待进行的改进：将【背景颜色】和【箭头图片】等信息写在配置文件中，
+ *使之可以根据配置文件进行变换
+ *
+ */
+
 .overlay{
   position: absolute;
   top: 0;
@@ -18,36 +25,41 @@
 
 .jscarousal
 {
-	width: 1182px;
-	height: 150px;
+	width: 1198px;
+	height: auto;
 	background-color: #474747;
 	border: solid 1px #7A7677;
-	margin:0 auto;
-	padding: 0;
-	padding: 22px 8px 22px 8px;
+	margin: 0 auto;
+	padding-left: 8px;
+	padding-top: 22px;
+	padding-bottom: 22px;
 	position: relative;
-	text-align: center; /*overflow: hidden;*/
+	text-align: center;
+	overflow: hidden; /*overflow: hidden;*/
 }
 .jscarousal .jscarousal-left, .jscarousal .jscarousal-right
 {
 	float: left;
-	width: 23px;
-	height: 98px;
-	background-color: #121212;
-	color: White;
+	width: 43px;
+	height: 132px;
+	line-height: 132px;
+	background-color: #474747;
+	color: white;
 	position: relative;
-	top: 12px;
+	top: 0;
+	background: none;
 	cursor: pointer;
 }
 .jscarousal .jscarousal-left
 {
-	background-image: url(../images/left_arrow.jpg);
+	background-image: url(../images/arrow-l.png);  /*左箭头图片设置*/
 	background-repeat: no-repeat;
 	background-position: left;
+
 }
 .jscarousal .jscarousal-right
 {
-	background-image: url(../images/right_arrow.jpg);
+	background-image: url(../images/arrow-r.png);  /*右箭头图片设置*/
 	background-repeat: no-repeat;
 	background-position: right;
 }
@@ -93,8 +105,8 @@
 }
 .thumbnail-inactive
 {
-	filter: alpha(opacity=60);
-	opacity: 0.6;
+	filter: alpha(opacity=90);
+	opacity: 0.9;
 	cursor: pointer;
 }
 .thumbnail-text
@@ -105,4 +117,4 @@
 	display: block;
 	padding: 10px 2px 2px 0px;
 }
-.jscarousal-left{margin-left: 30px;}
+.jscarousal-left{margin-left: 0px;}

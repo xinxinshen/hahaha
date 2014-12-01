@@ -1,0 +1,228 @@
+/*公用样式*/
+.comWidth{width: 1200px;
+	margin: 0 auto;
+	}
+
+
+/*topBar*/
+.topBar{
+	height: 31px;
+	 background-color: #F7F7F7; 
+	line-height: 31px;
+	}
+.topBar a:hover{
+	color:#FF0000;
+	}
+.leftArea{
+	float:left;
+	}
+.rightArea{
+	float:right;
+	}
+.collection{
+	background: url(../images/icons/collection.jpg) left center no-repeat;
+	padding-left: 19px;
+	font-weight: bold;
+	}
+/*logo*/
+.logoBar{
+	height:100px; 
+	background-color:#DFD8D8;
+	}
+.logo{
+	height:84px; 
+	width:334px;
+	}
+.search_box{
+	width:430px;
+	padding-left:185px;
+	padding-top:35px;
+	}
+.search_text{
+	width:350px; 
+	height:35px; /*距离顶部的高度*/
+	line-height:35px\9;/* \9代表所有的IE浏览器*/
+	padding:0 5px;
+	background-color:#FFF;
+}
+.search_btn{
+	width:70px; 
+	height:35px; /*距离顶部的高度*/
+	font-size:14px;
+	font-family:"微软雅黑";
+	background-color:#FF8C00;
+	color:#FFF;
+	}
+
+/*购物车*/
+.shopCar{
+	font:14px/35px  "微软雅黑";
+	color:#FFF;
+	width:145px;
+	height:35px; /*距离顶部的高度*/
+	background-color:#FF8C00;
+	margin-top:35px;
+	margin-right:59px;
+	}
+.shopText{
+	height:100%;
+	width:87px;
+	border-right:#E27A00 solid 1px;
+	background:url(../images/icons/shopIcon.jpg) 10px center no-repeat;
+	text-indent:40px;/*首行缩进*/
+	}
+.shopNum{
+	width:27px;
+	height:35px;
+	border-left:1px solid #FF9C01;
+	background:url(../images/icons/sanjiao.jpg) 33px center no-repeat;
+	text-align:right;
+	padding-right:29px;
+	}
+
+/*导航*/
+.navBox{
+	height:35px;
+	background-color:#1E1511;
+	color:#FFF;
+	}
+.shopClass{
+	width:228px; /*分类导航的宽度为228px*/
+	position:relative;
+	}
+.shopClass h3{
+	text-align:center;
+	line-height:35px;}
+.shopClass i{
+	margin-left:11px;
+	width:11px;
+	height:7px;
+	overflow:hidden;
+	display:inline-block;
+	background:url(../images/icons/sanjiaoT.png) left center no-repeat;
+	}
+.nav{
+	line-height:35px;
+	}
+.nav li{
+	float: left;
+	}
+.nav a{
+	height:35px;
+	display:inline-block;
+	padding: 0 35px;
+	color:#FFF;
+	}
+.nav .active{
+	background-color:#795445;}
+	
+/*商品弹出列表*/
+.shopClass_show{
+	background-color:#795445;
+	position:absolute;
+	left:0;
+	top:35px;
+	width:100%;}
+.shopClass_item{
+	padding:14px 10px;
+	border-bottom:1px solid #645042;
+	border-top:1px solid #8F6243;}
+.shopClass_item dt{
+	height:24px;
+	background:url(../images/icons/sanjiao-r.png) right center no-repeat;}
+.shopClass_item .b{
+	font:14px/1 "微软雅黑";
+	}
+.shopClass_item a{
+	color:#FFF;}
+.shopClass_item .aLink{
+	display: inline-block;
+	zoom: 1;
+	font-family: "微软雅黑";
+	padding:2px 5px;
+	line-height:14px;
+	vertical-align: top;
+	margin-right: 0px;
+	border-radius: 10px;
+	background: #1E1511;
+	box-shadow:0px 0px 3px #CCC;
+	text-decoration:underline;
+	}
+/*banner部分*/
+.banner{
+	margin-bottom:15px;}
+.banner_bar{
+	float:right;
+	position:relative;
+	overflow:hidden;
+	}
+.banner_big,
+.banner_big img{
+	width:972px; /*右侧宽度972*/
+	height:390px;
+	}
+.banner_big .imgBox{
+	width:1944px;
+	height:390px;
+	}
+.banner_sm,
+.banner_sm img{
+	width:228px; /*右侧宽度972*/
+	height:400px;
+	}
+.banner_sm .imgBox{
+	width:456px;
+	height:490px;
+	}
+.imgBox li{
+	float:left;}
+	
+.imgNum{
+	position:absolute;
+	left:0;
+	bottom:15px;
+	width:100%;
+	text-align:center;
+	}
+.imgNum a{
+	width:20px;
+	height:5px;
+	overflow:hidden;
+	background-color:#FFF;
+	display:inline-block;
+	margin:0 3px;
+	}
+.imgNum .active{
+	background-color:#FF7700;}
+	
+/*商品标题*/
+.shopTit{
+	height:44px;
+	font-family: "微软雅黑";
+	line-height:44px;
+	margin-bottom:15px;
+	}
+.shopTit h3{
+	float:left;
+	font-size:24px;
+	float:left;
+	padding-left:15px;}
+.shopTit .icon{
+	width:44px;
+	height:44px;
+	float:left;
+	background:url(../images/icons/shopTit.jpg) left top no-repeat;
+	}
+.more{
+	float:right;
+	font-family:"宋体";
+	}
+.more:hover{
+	text-decoration:underline;}
+/*商品列表*/
+.shopList .leftArea{
+	width:228px;
+	}
+.shopList .rightArea{
+	width:972px;
+	}
